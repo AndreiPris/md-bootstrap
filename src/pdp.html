@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>MD-Bootstrap</title>
 </head>
 
 <body>
@@ -13,14 +13,15 @@
   <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark blue scrolling-navbar">
       <a class="navbar-brand" href="#"><strong>My Site</strong></a>
+      <a class="navbar-brand" href="#"><i class="fa fa-star"></i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Features</a>
@@ -30,6 +31,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Opinions</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="pdp.html">PDP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
           </li>
         </ul>
         <ul class="navbar-nav nav-flex-icons">
@@ -43,10 +50,225 @@
             <a class="nav-link"><i class="fa fa-instagram"></i></a>
           </li>
         </ul>
+      </div>
     </nav>
   </header>
   <!--Main Navigation-->
-  <h1>Contact Us</h1>
-</body>
+  <div class="container mt-5 pt-3">
+
+    <!--Section: Product detail -->
+    <section id="productDetails" class="pb-5">
+
+      <!--News card-->
+      <div class="card mt-5 hoverable">
+        <div class="row mt-5">
+          <div class="col-lg-6 ml-1">
+            <div class="pdp-image-container product-section">
+              <div class="pdp-image">
+                <div class="numbertext">1 / 6</div>
+                <img src="./images/iped.jpg">
+              </div>
+
+              <div class="pdp-image">
+                <div class="numbertext">2 / 6</div>
+                <img src="./images/iped black.jpg">
+              </div>
+
+              <div class="pdp-image">
+                <div class="numbertext">3 / 6</div>
+                <img src="./images/btc.png">
+              </div>
+
+              <div class="pdp-image">
+                <div class="numbertext">4 / 6</div>
+                <img src="./images/paypal-verified-seal-png-300x300.png">
+              </div>
+
+              <div class="pdp-image">
+                <div class="numbertext">5 / 6</div>
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/5.jpg">
+              </div>
+
+              <div class="pdp-image">
+                <div class="numbertext">6 / 6</div>
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/6.jpg">
+              </div>
+
+              <div class="pdp-image__navigation">
+                <a class="prev">
+                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </a>
+                <a class="next">
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              </div>
+
+              <div class="row thumbnail-container">
+                <div class="column">
+                  <img data-id="1" class="thumbnail cursor" src="./images/iped.jpg" alt="The Woods">
+                </div>
+                <div class="column">
+                  <img data-id="2" class="thumbnail cursor" src="./images/iped black.jpg" alt="Cinque Terre">
+                </div>
+                <div class="column">
+                  <img data-id="3" class="thumbnail cursor" src="./images/btc.png" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                  <img data-test='lalala' data-id="4" class="thumbnail cursor" src="./images/paypal-verified-seal-png-300x300.png" alt="Northern Lights">
+                </div>
+                <div class="column">
+                  <img data-id="5" class="thumbnail cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/5.jpg" alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                  <img data-id="6" class="thumbnail cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/6.jpg" alt="Snowy Mountains">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 mr-3 text-center text-md-left">
+            <h2 class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4">
+              <strong>Sony headphones</strong>
+            </h2>
+            <span class="badge badge-danger product mb-4 ml-xl-0 ml-4">bestseller</span>
+            <h3 class="h3-responsive text-center text-md-left mb-5 ml-xl-0 ml-4">
+              <span class="red-text font-weight-bold">
+                <strong>$49</strong>
+              </span>
+              <span class="grey-text">
+                <small>
+                  <s>$89</s>
+                </small>
+              </span>
+            </h3>
+            <ul class="product__rating text-center text-md-left">
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star-half-o"></i></li>
+              <li><i class="fa fa-star-o"></i></li>
+            </ul>
+
+            <!--Accordion wrapper-->
+            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+              <!-- Accordion card -->
+              <div class="card">
+
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne1">
+                  <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                    <h5 class="mb-0 read-more-read-less__title">
+                      Description
+                      <i class="fa fa-angle-down rotate-icon"></i>
+                    </h5>
+                  </a>
+                </div>
+
+                <!-- Card body -->
+                <div id="collapseOne1" class="collapse show " role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+                  <div class="card-body read-more-read-less__content">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                  </div>
+                  <button class=“read-more-read-less” id="content-toggler">Read more</button>
+                </div>
+                
+              <!-- Accordion card -->
+
+              <!-- Accordion card -->
+              <div class="card">
+
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingTwo2">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                    <h5 class="mb-0">
+                      Details
+                      <i class="fa fa-angle-down rotate-icon"></i>
+                    </h5>
+                  </a>
+                </div>
+
+                <!-- Card body -->
+                <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion card -->
+
+              <!-- Accordion card -->
+              <div class="card">
+
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree3">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                    <h5 class="mb-0">
+                      Shipping
+                      <i class="fa fa-angle-down rotate-icon"></i>
+                    </h5>
+                  </a>
+                </div>
+
+                <!-- Card body -->
+                <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3" data-parent="#accordionEx">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                  </div>
+                  </xdiv>
+                </div>
+                <!-- Accordion card -->
+              </div>
+              <!--/.Accordion wrapper-->
+
+              <!-- Add to Cart -->
+              <section class="color">
+                <div class="mt-5 mb-5 ml-0">
+                  <p><strong>Choose your color</strong></p>
+                  <label class="checkbox">
+                    <span class="sr-only">Green</span>
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark green"></span>
+                  </label>
+                  <label class="checkbox">
+                    <span class="sr-only">Grey</span>
+                    <input type="radio" name="radio">
+                    <span class="checkmark grey"></span>
+                  </label>
+                  <label class="checkbox">
+                    <span class="sr-only">Red</span>
+                    <input type="radio" name="radio">
+                    <span class="checkmark red"></span>
+                  </label>
+                  <label class="checkbox">
+                    <span class="sr-only">Yellow</span>
+                    <input type="radio" name="radio">
+                    <span class="checkmark yellow"></span>
+                  </label>
+                  <label class="checkbox">
+                    <span class="sr-only">Blue</span>
+                    <input type="radio" name="radio">
+                    <span class="checkmark blue"></span>
+                  </label>
+                  <label class="checkbox">
+                    <span class="sr-only">Orange</span>
+                    <input type="radio" name="radio">
+                    <span class="checkmark orange"></span>
+                  </label>
+                </div>
+              </section>
+              <!-- /.Add to Cart -->
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- /.Section: Product detail -->
+    </div>
+    
 
 </html>

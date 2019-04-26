@@ -1,0 +1,15 @@
+.read-more-read-less{
+    &__title{
+        background-color: red;
+    }
+
+    &__content{
+        background-color: blue;
+    }
+    &__dots{
+        display: inline-block;
+    }
+    &__more{
+        display: none;
+    }
+}

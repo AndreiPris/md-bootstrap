@@ -5,3 +5,7 @@ $fa-font-path: '~font-awesome/fonts';
 // Bootstrap 4
 @import '~bootstrap/scss/bootstrap';
 @import './header';
+@import './components/img-viewer';
+@import './components/rating';
+@import './components/costom-radio';
+@import './components/read-more-read-less'

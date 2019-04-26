@@ -6,3 +6,6 @@ import 'popper.js';
 import 'bootstrap';
 // Material Design Bootstrap
 import '../vendors/mdb/js/mdb';
+//
+import './components/imageViewer';
+import './components/readMoreReadLess';
