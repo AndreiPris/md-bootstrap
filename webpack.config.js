@@ -59,6 +59,14 @@ module.exports = (env, argv) => {
                     },
                 },
                 {
+                    test: /\.hbs$/,
+                    loader: 'handlebars-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        useRelativePath: true,
+                    },
+                },
+                {
                     test: /\.(eot|svg|ttf|woff2?|otf)$/,
                     loader: 'file-loader',
                     options: {
@@ -105,6 +113,11 @@ module.exports = (env, argv) => {
                 template: 'src/contact-us.html',
                 inject: 'body',
                 filename: 'contactus.html',
+            }),
+            new HtmlWebPackPlugin({
+                template: 'src/plp.html',
+                inject: 'body',
+                filename: 'products.html',
             }),
             new CopyWebpackPlugin([
                 {

@@ -1,31 +1,26 @@
-function toggleContent(evt){
-    var clickEl = evt.target;
-
-    if(clickEl.classList.contains('read-more-read-less__cta')){
-
-        var currentContainer = clickEl.closest('read-more-read-less');
-
-        if(currentContainer){
-            
-        }
-
 function toggleContent(evt) {
-  var dots = document.getElementById('dots');
-  var moreText = document.getElementById('more');
-  var btnText = document.getElementById('read-more-read-less__cta');
+  var clickEl = evt.target;
 
-  if (dots.style.display === 'none') {
-    dots.style.display = 'inline-block';
-    btnText.innerHTML = 'Read more';
-    moreText.style.display = 'none';
-  } else {
-    dots.style.display = 'none';
-    btnText.innerHTML = 'Read less';
-    moreText.style.display = 'inline-block';
+  if (clickEl.classList.contains('read-more-read-less__cta')) {
+    var currentContainer = clickEl.closest('.read-more-read-less');
+
+    if (currentContainer) {
+      var dots = currentContainer.getElementsByClassName('read-more-read-less__dots')[0];
+      var moreText = currentContainer.getElementsByClassName('read-more-read-less__more')[0];
+      var buttons = currentContainer.getElementsByClassName('read-more-read-less__cta');
+
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.toggle('hide');
+      }
+
+      dots.classList.toggle('hide');
+      moreText.classList.toggle('hide');
+    }
   }
 }
-};
-if(container.length){
-    document.getElementsByClassName('read-more-read-less__container')[0]
-    .addEventListener('click', toggleContent);
+
+var containers = document.getElementsByClassName('read-more-read-less__container');
+
+if (containers.length) {
+  containers[0].addEventListener('click', toggleContent);
 }

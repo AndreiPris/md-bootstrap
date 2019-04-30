@@ -1,15 +1,23 @@
-.read-more-read-less{
-    &__title{
-        background-color: red;
+.read-more-read-less {
+    .hide {
+      display: none;
     }
-
-    &__content{
-        background-color: blue;
+  
+    &__title {
+      background-color: yellow;
     }
-    &__dots{
-        display: inline-block;
+  
+    &__content {
+      background-color: red;
     }
-    &__more{
-        display: none;
+  
+    &__dots,
+    &__more {
+      display: inline-block;
     }
-}
+  
+    &__cta {
+      background-color: blue;
+    }
+  }
+  
