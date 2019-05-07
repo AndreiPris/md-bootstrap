@@ -1,3 +1,6 @@
+import './components/header/header';
+import './components/footer/footer';
+
 // jQuery
 import 'jquery';
 // PopperJS
@@ -10,5 +13,5 @@ import '../vendors/mdb/js/mdb';
 import './components/imageViewer';
 import './components/readMoreReadLess';
 import './plp/product-list';
-import './templates/helper';
-import './plp';
+import './templates/helpers/ifeq';
+import './plp/productListHelpers';
